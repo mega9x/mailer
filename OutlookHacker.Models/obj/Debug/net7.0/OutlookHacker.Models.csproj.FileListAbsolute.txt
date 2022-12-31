@@ -1,0 +1,12 @@
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\bin\Debug\net7.0\OutlookHacker.Models.deps.json
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\bin\Debug\net7.0\OutlookHacker.Models.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\bin\Debug\net7.0\OutlookHacker.Models.pdb
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.csproj.AssemblyReference.cache
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.AssemblyInfoInputs.cache
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.AssemblyInfo.cs
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.csproj.CoreCompileInputs.cache
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\refint\OutlookHacker.Models.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\OutlookHacker.Models.pdb
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.Models\obj\Debug\net7.0\ref\OutlookHacker.Models.dll

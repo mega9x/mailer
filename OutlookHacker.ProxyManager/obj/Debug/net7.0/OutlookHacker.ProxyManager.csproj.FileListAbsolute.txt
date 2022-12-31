@@ -1,0 +1,15 @@
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\bin\Debug\net7.0\OutlookHacker.ProxyManager.deps.json
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\bin\Debug\net7.0\OutlookHacker.ProxyManager.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\bin\Debug\net7.0\OutlookHacker.ProxyManager.pdb
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\bin\Debug\net7.0\OutlookHacker.Models.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\bin\Debug\net7.0\OutlookHacker.Models.pdb
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.csproj.AssemblyReference.cache
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.GeneratedMSBuildEditorConfig.editorconfig
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.AssemblyInfoInputs.cache
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.AssemblyInfo.cs
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.csproj.CoreCompileInputs.cache
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.csproj.CopyComplete
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\refint\OutlookHacker.ProxyManager.dll
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\OutlookHacker.ProxyManager.pdb
+E:\workspace\projects\project\OutlookHacker\OutlookHacker.ProxyManager\obj\Debug\net7.0\ref\OutlookHacker.ProxyManager.dll
