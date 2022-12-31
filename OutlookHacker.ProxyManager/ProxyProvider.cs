@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.RegularExpressions;
 using OutlookHacker.Models.ConstStr;
 
 namespace OutlookHacker.ProxyManager;
@@ -13,7 +14,7 @@ public class ProxyProvider
         {
             await FetchProxy();
         }
-        if (ProxyList.Count <= 1)
+        if (ProxyList.Count == 1)
         {
             return ProxyList[0];
         }
@@ -24,14 +25,15 @@ public class ProxyProvider
     public ProxyProvider()
     {
         IsIniting = true;
-        _ = FetchProxy();
         IsIniting = false;
     }
     private async Task FetchProxy()
     {
         var client = new HttpClient();
-        string response = await client.GetStringAsync($"ConstUri.PROXY_API{100}");
-        var list = JsonSerializer.Deserialize<string[]>(response);
+        var response = await client.GetStringAsync($"{ConstUri.PROXY_API}{100}");
+        var ipReg = new Regex(RegexStr.MATCH_IP);
+        // var list = ipReg.Matches(response).Select(x => x.Groups[0].Value);
+        var list = JsonSerializer.Deserialize<IEnumerable<string>>(response);
         if (list is null)
         {
             return;

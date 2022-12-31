@@ -34,13 +34,11 @@ namespace OutlookHacker.Main.MailName
                     @".*([z|Z]).*([z|Z]).*")) // Prevents double z
             .UsingSyllableCount(2, 4);
         private List<Action> actions = new();
+        private List<Action> endingAction = new();
         public MailNameGen()
         {
-            actions = new()
+            actions = new List<Action>
             {
-                () => {
-                    Append("_");
-                },
                 () => {
                     var chance = new Chance();
                     var p = chance.Person();
@@ -52,18 +50,6 @@ namespace OutlookHacker.Main.MailName
                     Append(p.LastName);
                 },
                 () => {
-                    var chance = new Chance();
-                    Append(chance.Age(AgeRanges.Adult));
-                },
-                () => {
-                    var chance = new Chance();
-                    Append(chance.Age(AgeRanges.Adult));
-                },
-                () => {
-                    var chance = new Chance();
-                    Append(chance.Birthday(AgeRanges.Adult).Year);
-                },
-                () => {
                     Append(GenOne.Next());
                 },
                 () => {
@@ -71,16 +57,40 @@ namespace OutlookHacker.Main.MailName
                     Append(chance.Animal());
                 },
             };
+            endingAction = new List<Action>
+            {
+                () => {
+                    Append("_");
+                },
+                () => {
+                    var chance = new Chance();
+                    Append(chance.Age(AgeRanges.Adult).ToString());
+                },
+                () => {
+                    var chance = new Chance();
+                    Append(chance.Age(AgeRanges.Adult).ToString());
+                },
+                () => {
+                    var chance = new Chance();
+                    Append(chance.Birthday(AgeRanges.Adult).Year);
+                },
+            };
         }
         public string GetRandomName()
         {
             _stringBuilder.Clear();
-            var index = RandomNumberGenerator.GetInt32(3, 6);
+            var index = RandomNumberGenerator.GetInt32(1, 3);
+            var ifAppendNum = RandomNumberGenerator.GetInt32(0, 2);
             for (var i = 0; i <= index; i++)
             {
                 actions[RandomNumberGenerator.GetInt32(0, actions.Count)]();
             }
-            return _stringBuilder.ToString();
+            if (ifAppendNum == 1)
+            {
+                endingAction[RandomNumberGenerator.GetInt32(0, endingAction.Count)]();
+            }
+            var result = _stringBuilder.ToString();
+            return result.Replace(" ", "");
         }
         public string GetPassword()
         {
